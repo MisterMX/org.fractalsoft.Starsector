@@ -1,0 +1,13 @@
+app-id: org.fractalsoft.Starsector
+runtime: org.freedesktop.Platform
+runtime-version: '21.08'
+sdk: org.freedesktop.Sdk
+command: /app/startup.sh
+finish-args:
+  - --socket=fallback-x11
+  - --share=ipc
+  - --device=dri
+  - --socket=pulseaudio
+modules:
+  - modules/xrandr.yml
+  - modules/starsector/starsector.yml

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Starsector
+Icon=org.fractalsoft.Starsector
+Exec=/app/startup.sh
+Categories=Game;
+StartupWMClass=Starsector
