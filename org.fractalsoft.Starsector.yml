@@ -10,4 +10,5 @@ finish-args:
   - --socket=pulseaudio
 modules:
   - modules/xrandr.yml
+  - modules/openal.yml
   - modules/starsector/starsector.yml

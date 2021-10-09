@@ -6,6 +6,7 @@ Flatpak Packaging for Starsector
 
 * Starsector 0.95a-RC15
 * xrandr (dependency)
+* openal-soft (dependency)
 
 ## Installing
 
