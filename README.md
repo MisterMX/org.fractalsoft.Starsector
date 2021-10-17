@@ -11,7 +11,7 @@ Flatpak Packaging for Starsector
 ## Installing
 
 ```bash
-flatpak-builder build-dir --force-clean --install --user org.fractalsoft.Starsector
+flatpak-builder build-dir --force-clean --install --user org.fractalsoft.Starsector.yml
 ```
 
 ## Updating/Cleaning 
