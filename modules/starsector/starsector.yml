@@ -3,8 +3,8 @@ no-autogen: true
 buildsystem: simple
 sources:
   - type: archive
-    url: https://s3.amazonaws.com/fractalsoftworks/starsector/starsector_linux-0.95a-RC15.zip
-    sha256: de34d9d8d9c1105b2884aa38b2e39efdb2fa69fdfb46528c114f90ed220f21a8
+    url: https://s3.amazonaws.com/fractalsoftworks/starsector/starsector_linux-0.95.1a-RC6.zip
+    sha256: 3da88bd5198a1c35ab557ff11973c4e6fa243c13936a1faf1a3867d78ffefd93
   - type: file
     path: startup.sh
   - type: file
