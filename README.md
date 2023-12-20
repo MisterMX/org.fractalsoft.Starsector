@@ -1,23 +1,20 @@
 # Starsector Flatpak
 
-Flatpak Packaging for Starsector
+Unofficial Flatpak manifest for Starsector.
 
-## Contents
+## Install
 
-* Starsector 0.95a-RC15
-* xrandr (dependency)
-* openal-soft (dependency)
+Starsector is currently not available directly via Flathub, but it can be build
+and run locally by cloning this repository and running
 
-## Installing
-
-```bash
-flatpak-builder build-dir --force-clean --install --user org.fractalsoft.Starsector.yml
+```
+make flatpak run
 ```
 
-## Updating/Cleaning 
+This requires Flatbuilder and the `org.freedesktop.Platform` Flatpak runtime to
+be present on your system.
 
-If saves are incompatible or if you want to clean your installation, all files are saved under ```~/.var/app/org.fractalsoft.Starsector/data``` so you can access and/or remove them.
+## File locations
 
-## Mods
-
-Mods can be installed under ```~/.var/app/org.fractalsoft.Starsector/data/mods```
+All user data including save files and mods is stored in
+ `~/.var/app/org.fractalsoft.Starsector/data`.
