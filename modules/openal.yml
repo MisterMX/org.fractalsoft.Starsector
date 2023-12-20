@@ -2,5 +2,5 @@ name: openal
 buildsystem: cmake
 sources:
   - type: archive
-    url: 'https://github.com/kcat/openal-soft/archive/refs/tags/1.21.1.tar.gz'
-    sha256: 8ac17e4e3b32c1af3d5508acfffb838640669b4274606b7892aa796ca9d7467f
+    url: 'https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz'
+    sha256: dfddf3a1f61059853c625b7bb03de8433b455f2f79f89548cbcbd5edca3d4a4a
