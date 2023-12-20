@@ -2,6 +2,8 @@ app-id: org.fractalsoft.Starsector
 runtime: org.freedesktop.Platform
 runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.openjdk8
 command: /app/startup.sh
 finish-args:
   - --socket=fallback-x11
@@ -12,3 +14,4 @@ modules:
   - modules/xrandr.yml
   - modules/openal.yml
   - modules/starsector/starsector.yml
+  - modules/openjdk.yml

@@ -1,0 +1,11 @@
+# This module will replace the jre7 that is shipped with Starsector with jre8.
+name: openjdk
+buildsystem: simple
+build-commands:
+  # Copy only the JRE without the SDK part
+  - rm -rf /app/jre
+  - cp -ra /usr/lib/sdk/openjdk8/jvm/java-8-openjdk/jre /app/jre
+  - rm -rf /app/starsector/jre_linux && ln -s /app/jre /app/starsector/jre_linux
+  # Remove deprecated JVM flags
+  # Add -Xverify:none to prevent runtime errors
+  - sed -i 's;-XX:MaxPermSize=128m;-Xverify:none;g' /app/starsector/starsector.sh
