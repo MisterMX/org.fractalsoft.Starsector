@@ -3,8 +3,8 @@ no-autogen: true
 buildsystem: simple
 sources:
   - type: archive
-    url: https://f005.backblazeb2.com/file/fractalsoftworks/release/starsector_linux-0.97a-RC11.zip
-    sha256: eed58226c2d9bcc558673c70176ee70c4c54562e1b009aff529fb4afc901ad96
+    url: https://f005.backblazeb2.com/file/fractalsoftworks/release/starsector_linux-0.98a-RC7.zip
+    sha256: 178e59644421a63abda87363742fedefe7dd66707d73abcaf06b330e38b61f7b
   - type: file
     path: startup.sh
   - type: file
@@ -19,7 +19,7 @@ build-commands:
   - rmdir saves && ln -s ~/.var/app/org.fractalsoft.Starsector/data/saves saves
   - rmdir mods && ln -s ~/.var/app/org.fractalsoft.Starsector/data/mods mods
   - rmdir screenshots && ln -s ~/.var/app/org.fractalsoft.Starsector/data/screenshots screenshots
-  - ln -s ~/.var/app/org.fractalsoft.Starsector/data logs
+  - ln -s ~/.var/app/org.fractalsoft.Starsector/data/logs logs
   - sed -i 's;logs=.;logs=./logs;g' starsector.sh
   - mkdir /app/starsector
   - mv * /app/starsector/

@@ -1,24 +1,7 @@
-# This module will replace the jre7 that is shipped with Starsector with jre8.
 name: openjdk
 no-autogen: true
 buildsystem: simple
-sources:
-  # - type: archive
-  #   url: https://github.com/wispborne/JRE/releases/download/jre8-271/jre8-271-Linux-x64.tar.gz
-  #   sha256: 0e1e05d84c7d73f4afda73d96f44a708bf908cd7f0e9eefdf01e09e7211457ef
-  - type: archive
-    url: https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B26-ea-beta/OpenJDK-jdk_x64_linux_hotspot_24_26-ea.tar.gz
-    sha256: 9455684a073cc3b5ab3006a9efeb89ee07c5b561c218ef09f76be9c52aa850fa
-
 build-commands:
-  # Copy only the JRE without the SDK part
-  - rm -rf /app/jre
-  # - cp -ra /usr/lib/sdk/openjdk8/jvm/java-8-openjdk/jre /app/jre
-  # - ls -a
-  # - pwd
-  - mkdir -p /app/jre
-  - cp -ra * /app/jre
+  - /usr/lib/sdk/openjdk21/install.sh
+  # Replace JRE shipped with starsector with flatpak extensions
   - rm -rf /app/starsector/jre_linux && ln -s /app/jre /app/starsector/jre_linux
-  # Remove deprecated JVM flags
-  # Add -Xverify:none to prevent runtime errors
-  # - sed -i 's;-XX:MaxPermSize=128m;-Xverify:none;g' /app/starsector/starsector.sh
