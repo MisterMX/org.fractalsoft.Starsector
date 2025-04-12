@@ -3,4 +3,4 @@ mkdir -p "${XDG_DATA_HOME}/saves" "${XDG_DATA_HOME}/mods" "${XDG_DATA_HOME}/scre
 ln -s "${XDG_DATA_HOME}/java" ~/.java
 
 cd /app/starsector
-./starsector.sh
+./miko-startup.sh

@@ -24,3 +24,4 @@ build-commands:
   - mkdir /app/starsector
   - mv * /app/starsector/
   - cat /app/starsector/starsector.sh
+  - rm /app/starsector/data/config/settings.json && ln -s ~/.var/app/org.fractalsoft.Starsector/data/config/settings.json /app/starsector/data/config/settings.json
