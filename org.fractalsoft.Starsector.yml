@@ -1,6 +1,8 @@
 app-id: org.fractalsoft.Starsector
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
+runtime-extensions:
+  - org.freedesktop.Platform.GL.default
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk21
@@ -8,10 +10,13 @@ command: /app/startup.sh
 finish-args:
   - --socket=fallback-x11
   - --share=ipc
+  - --share=network
   - --device=dri
   - --socket=pulseaudio
+  - --socket=session-bus
 modules:
   - modules/xrandr.yml
   - modules/openal.yml
   - modules/starsector/starsector.yml
   - modules/openjdk.yml
+  - modules/trios/trios.yml

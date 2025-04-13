@@ -1,6 +1,11 @@
 # Starsector Flatpak
 
 Unofficial Flatpak manifest for Starsector.
+It includes the [TriOS launcher](https://github.com/wispborne/TriOS) which is
+run on startup instead of the game directly.
+
+Note: The path to the Starsector is preconfigured on first start to `/app/starsector`.
+Do not change it.
 
 ## Install
 
