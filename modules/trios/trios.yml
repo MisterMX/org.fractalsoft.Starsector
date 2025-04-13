@@ -1,0 +1,21 @@
+name: trios
+no-autogen: true
+buildsystem: simple
+sources:
+  - type: archive
+    url: https://github.com/wispborne/TriOS/releases/download/1.1.7/TriOS-Linux.zip
+    sha256: 6c82797b1f3fc2dd112eaf4a9df7f069584e60a404d6f0ae1ea49bb6f1d3fc2d
+  - type: file
+    path: startup.sh
+  # - type: file
+  #   path: com.github.wispborne.Trios.desktop
+  # - type: file
+  #   path: com.github.wispborne.Trios.png
+build-commands:
+  - install startup.sh /app/
+  # - mkdir -p /app/share/applications /app/share/icons/hicolor/128x128/apps/
+  # - install com.github.wispborne.Trios.desktop /app/share/applications/
+  # - install com.github.wispborne.Trios.png /app/share/icons/hicolor/128x128/apps/
+  - mkdir /app/trios
+  - mv * /app/trios/
+  - chmod +x /app/trios/data/flutter_assets/assets/linux/7zip/x64/7zzs

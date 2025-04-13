@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Trios
+Icon=com.github.wispborne.Trios
+Exec=/app/startup.sh
+Categories=Game;Starsector
+StartupWMClass=Starsector
